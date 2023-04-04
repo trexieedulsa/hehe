@@ -82,17 +82,17 @@ class studentInfoController extends Controller
 
    
 
-        $studentinfo= new studentinfo();
-        $studentinfo->idNo = $request->xidNo;
-        $studentinfo->firstName = $request->xfirstName;
-        $studentinfo->middleName = $request->xmiddleName;
-        $studentinfo->lastName = $request->xlastName;
-        $studentinfo->suffix = $request->xsuffix;
-        $studentinfo->course = $request->xcourse;
-        $studentinfo->year = $request->xyear;
-        $studentinfo->birthDate = $request->xbirthDate;
-        $studentinfo->gender = $request->xgender;
-        $studentinfo->save();
+        $studentInfo= new studentInfo();
+        $studentInfo->idNo = $request->xidNo;
+        $studentInfo->firstName = $request->xfirstName;
+        $studentInfo->middleName = $request->xmiddleName;
+        $studentInfo->lastName = $request->xlastName;
+        $studentInfo->suffix = $request->xsuffix;
+        $studentInfo->course = $request->xcourse;
+        $studentInfo->year = $request->xyear;
+        $studentInfo->birthDate = $request->xbirthDate;
+        $studentInfo->gender = $request->xgender;
+        $studentInfo->save();
         return redirect()->route('students');
 
         echo $request->xidNo;
